@@ -9,3 +9,6 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
+#validation-input:focus {
+  outline: none;
+}
