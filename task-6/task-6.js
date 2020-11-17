@@ -6,15 +6,10 @@ function onInputChange(event) {
   if (event.target.value.length === dataLength) {
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
-  }
-  if (event.target.value.length === 0) {
+  } else if (event.target.value.length === 0) {
     inputRef.classList.remove("invalid");
     inputRef.classList.remove("valid");
-  }
-  if (
-    event.target.value.length !== dataLength &&
-    event.target.value.length !== 0
-  ) {
+  } else {
     inputRef.classList.add("invalid");
   }
 }
