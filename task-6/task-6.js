@@ -10,6 +10,7 @@ function onInputChange(event) {
     inputRef.classList.remove("invalid");
     inputRef.classList.remove("valid");
   } else {
+    inputRef.classList.remove("valid");
     inputRef.classList.add("invalid");
   }
 }
