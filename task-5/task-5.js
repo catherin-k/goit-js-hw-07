@@ -3,9 +3,8 @@ const nameLaberRef = document.querySelector("#name-output");
 console.dir(nameLaberRef);
 
 function onInputChange(event) {
-  event.target.value === ""
-    ? (nameLaberRef.textContent = "Незнакомец")
-    : (nameLaberRef.textContent = event.target.value);
+  nameLaberRef.textContent =
+    event.target.value === "" ? "Незнакомец" : event.target.value;
 }
 
 inputRef.addEventListener("input", onInputChange);
